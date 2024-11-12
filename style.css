@@ -1,0 +1,73 @@
+.recaptcha {
+  font-family: Roboto,helvetica,arial,sans-serif;
+  margin: 100px;
+  width: 305px;
+  background-color: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+}
+
+.nomargin .recaptcha {
+  margin: 0;
+}
+
+.recaptcha-info {
+  font-size: .5rem;
+}
+
+.recaptcha-info p {
+  font-size: .7rem;
+}
+
+.recaptcha-test {
+  font-family: Roboto,helvetica,arial,sans-serif;
+  width: 940px;
+}
+
+.recaptcha-test::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 19px;
+  left: -26px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 30px 18px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.recaptcha-test p {
+  font-size: .9rem;
+}
+
+.recaptcha-test p.sub {
+  font-size: 1.4rem;
+}
+
+.recaptcha-test .recaptcha-info p {
+  font-size: .7rem;
+}
+
+.recaptcha-cover {
+  position: relative;
+}
+
+.recaptcha + .recaptcha-test {
+  position: absolute;
+  top: 0;
+  left: 170px;
+  z-index: 9999;
+}
+
+.checkbox {
+  transition: border-color .1s;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
